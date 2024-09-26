@@ -1,0 +1,35 @@
+.card {
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    max-width: 500px;
+    box-shadow: 3px 3px 3px #ccc;
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+        padding: 10px;
+
+        div:last-child {
+            color: #1677ff;
+        }
+    }
+
+    main{
+        min-height: 200px;
+        border-bottom: 1px solid #ccc;
+        padding: 10px;
+    }
+    footer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px;
+        button{
+            margin-left: 10px;
+            padding: 3px 10px;
+        }
+    }
+}

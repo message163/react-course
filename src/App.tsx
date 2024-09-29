@@ -1,13 +1,11 @@
-//在哪儿用在哪儿引入即可
-//react没有全局组件和局部组件的概念
 import Card from "./components/Card"
+import Card2 from "./components/Card2"
 function App() {
-
   return (
     <>
-      <Card></Card>
+      <Card  title={"我是兄弟A"}></Card>
+      <Card2  title={"我是兄弟B"}></Card2>
     </>
   )
 }
-
 export default App

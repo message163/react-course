@@ -17,14 +17,12 @@ const defaultProps:Partial<Props> = {
 }
 
 const Card:React.FC<Props> = (props) => {
+    //---------------------------------
+    //--接收方
+    window.addEventListener('on-card', e => {
+        console.log('我是B收到了',e.params)
+    })
     //-----------------------------------
-     //1.创建自定义事件
-     const e = new Event('on-card') //随便写不要跟原生事件重复就可以了
-     const clickTap = () => {
-        e.params = {name:'我是参数'}
-        window.dispatchEvent(e)
-     }
-    //------------------------------------
     const {title} = {...defaultProps, ...props}
     return <div className="card">
     <header>
@@ -35,7 +33,7 @@ const Card:React.FC<Props> = (props) => {
         {props.children}
     </main>
     <footer>
-        <button onClick={clickTap}>确认</button>
+        <button>确认</button>
         <button>取消</button>
     </footer>
 </div>
@@ -43,12 +41,6 @@ const Card:React.FC<Props> = (props) => {
 
 
 export default Card
-
-declare global {
-    interface Event {
-       params: {name:string}
-    }
-}
 
 
 // export default function Card(props: Props) {

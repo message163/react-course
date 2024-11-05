@@ -10,11 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "antd": "^5.21.6",
     "mitt": "^3.0.1",
+    "mockjs": "^1.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@types/mockjs": "^1.0.10",
+    "@types/node": "^22.8.6",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
@@ -24,6 +28,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "typescript": "^5.2.2",
-    "vite": "^5.0.8"
+    "vite": "^5.0.8",
+    "ws": "^8.18.0"
   }
 }

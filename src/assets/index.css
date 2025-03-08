@@ -1,6 +1,15 @@
-button{
-    padding:0 5px;
+#app1 {
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: absolute;
 }
-span{
-    margin: 0 10px;
+
+#app2 {
+    width: 200px;
+    height: 200px;
+    background: blue;
+    margin-top: 20px;
+    position: absolute;
+    top: 230px;
 }

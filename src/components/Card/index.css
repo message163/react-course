@@ -1,35 +1,27 @@
 .card {
-    background: white;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    max-width: 500px;
-    box-shadow: 3px 3px 3px #ccc;
+    width: 300px;
+    height: 150px;
+    border: 1px solid #d6d3d3;
+    margin: 30px;
+    border-radius: 2px;
+}
 
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 1px solid #ccc;
-        padding: 10px;
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d6d3d3;
+    padding: 10px;
+}
 
-        div:last-child {
-            color: #1677ff;
-        }
-    }
+.card-age {
+    font-size: 12px;
+    color: #999;
+}
 
-    main{
-        min-height: 200px;
-        border-bottom: 1px solid #ccc;
-        padding: 10px;
-    }
-    footer {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding: 10px;
-        button{
-            margin-left: 10px;
-            padding: 3px 10px;
-        }
-    }
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }

@@ -10,23 +10,29 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.0.1",
     "antd": "^5.21.6",
     "mitt": "^3.0.1",
     "mockjs": "^1.1.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "styled-components": "^6.1.14"
   },
   "devDependencies": {
     "@types/mockjs": "^1.0.10",
     "@types/node": "^22.8.6",
-    "@types/react": "^18.2.43",
-    "@types/react-dom": "^18.2.17",
+    "@types/react": "19.0.0",
+    "@types/react-dom": "19.0.0",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.14.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "eslint": "^8.55.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "less": "^4.2.2",
+    "sass": "^1.83.4",
+    "stylus": "^0.64.0",
+    "tailwindcss": "^4.0.1",
     "typescript": "^5.2.2",
     "vite": "^5.0.8",
     "ws": "^8.18.0"

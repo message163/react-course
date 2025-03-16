@@ -1,0 +1,23 @@
+/*  传统写法 */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: red;
+}
+
+/* 原子写法 */
+.color-red {
+    color: red;
+}
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}

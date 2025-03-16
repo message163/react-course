@@ -1,10 +1,12 @@
 import React from 'react';
-
+import './App.css'
 
 const App: React.FC = () => {
   return (
     <>
-      <section className='container'></section>
+      <div className='box'>
+         <div className='text'>小满zs</div>
+      </div>
     </>
   );
 }

@@ -7,12 +7,21 @@ interface Data {
    avatar: string
 }
 
-const getData = async () => {
-   await new Promise(resolve => setTimeout(resolve, 2000))
-   return await fetch('http://localhost:5174/data.json').then(res => res.json()) as { data: Data }
-};
+const sleep = (ms: number) => {
+   return new Promise((resolve) => {
+      setTimeout(() => {
+      resolve('')
+      }, ms)
+   })
+}
 
-const dataPromise = getData();
+const getData = async () => {
+  await sleep(2000) //等待两秒延迟
+  return await fetch('/data.json').then((res) => res.json()) as { data: Data }
+}
+
+const dataPromise = getData()
+
 
 const Card: React.FC = () => {
    const { data } = use(dataPromise);

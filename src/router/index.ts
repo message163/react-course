@@ -4,7 +4,7 @@ import Home from '../pages/Home';
 import About from '../pages/About';
 const router = createBrowserRouter([
     {
-        path: '/',
+        // path: '/index',
         Component: Layout,
         children:[
             {

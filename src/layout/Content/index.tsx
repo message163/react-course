@@ -1,6 +1,8 @@
-import { Outlet } from 'react-router';
+import { Outlet,useNavigation } from 'react-router';
 export default function Content() {
-    return <div>
+    const navigation = useNavigation();
+    const isLoading = navigation.state === 'loading';
+    return isLoading ? <div>Loading...</div> : <div>    
         <Outlet />
     </div>
 }

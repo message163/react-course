@@ -1,9 +1,8 @@
-import { NavLink } from 'react-router';
-import { Card } from 'antd';
+
+import { Card} from 'antd';
 export default function About() {
   return <Card>
-    <h1>About</h1>
-    <NavLink replace to="/home">Home</NavLink>
+     <h1>About</h1>
   </Card>;
 }
 

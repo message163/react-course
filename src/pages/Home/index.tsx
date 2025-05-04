@@ -1,12 +1,22 @@
 import { Card } from 'antd';
-import { useLoaderData } from 'react-router';
+import { Form,Input,Button } from 'antd';
 export default function Home() {
-  const { data } = useLoaderData();
+  const onFinish = (values: any) => {
+    
+  }
   return <Card>
     <h1>Home</h1>
-    {data.map((item: any) => (
-      <div key={item.age}>{item.name}</div>
-    ))}
+    <Form onFinish={onFinish}>
+      <Form.Item label="名字" name="name">
+        <Input />
+      </Form.Item>
+      <Form.Item label="年龄" name="age">
+        <Input />
+      </Form.Item>
+      <Form.Item>
+        <Button  type="primary" htmlType="submit">登录</Button>
+      </Form.Item>
+    </Form>
   </Card>;
 }
 

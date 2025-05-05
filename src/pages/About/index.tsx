@@ -1,11 +1,12 @@
 
 import { Card } from 'antd';
-import { NavLink } from 'react-router';
+import { Link,useNavigate } from 'react-router';
 export default function About() {
+  const navigate = useNavigate();
   return <Card>
     <div>
       <h1>About</h1>
-      <NavLink to="/index/home">Home</NavLink>
+      <Link  to="../home">Home</Link>
     </div>
   </Card>;
 }

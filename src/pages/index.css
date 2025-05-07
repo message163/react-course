@@ -1,0 +1,32 @@
+.left {
+    width: 50%;
+    height: 100%;
+    border: 1px solid rgb(19, 204, 148);
+    height: 300px;
+    margin:30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.right {
+    width: 50%;
+    height: 100%;
+    border: 1px solid rgb(214, 35, 35);
+    height: 300px;
+    margin:30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.left button {
+    margin: 10px;
+    padding: 10px;
+}
+
+.right button {
+    margin: 10px;
+    padding: 10px;
+}
+

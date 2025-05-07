@@ -23,7 +23,8 @@
     "xm-test-sadas": "^1.0.0",
     "xm-test-ui": "^1.0.0",
     "xm-ui-react": "^1.0.0",
-    "xm-ui-react-1": "^1.0.2"
+    "xm-ui-react-1": "^1.0.2",
+    "zustand": "^5.0.4"
   },
   "devDependencies": {
     "@types/mockjs": "^1.0.10",

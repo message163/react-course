@@ -1,11 +1,22 @@
 import React from 'react';
-import router from './router';
-import { RouterProvider } from 'react-router';
+import Left from './pages/left';
+import Right from './pages/right';
 import './App.css'
+import usePriceStore from './store/price';
 const App: React.FC = () => {
+  const { price } = usePriceStore();
   return (
     <>
-      <RouterProvider router={router} />
+      <div className="container">
+        <h1>Zustand Demo</h1>
+        <div className="wraps">
+          <Left />
+          <Right />
+        </div>
+        <div className='price'>
+          价格:<span>{price}</span>
+        </div>
+      </div>
     </>
   );
 }
